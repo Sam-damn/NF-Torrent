@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ichigo.Gui.StatusFragment">
+
+    <TextView
+        android:id="@+id/display_torrent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name:"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <EditText
+        android:id="@+id/torrent_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_torrent_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:hint="here it's the name of the folder"/>
+
+    <TextView
+        android:id="@+id/display_speed"
+        android:text="speed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/torrent_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/speed"
+        android:text="100 GB/S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_speed"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/display_limit"
+        android:text="limit:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speed"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/limit"
+        android:text="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_limit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/display_downloaded"
+        android:text="Downloaded:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/torrent_name"
+        android:layout_toEndOf="@+id/display_speed"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/downloaded"
+        android:text= "150 MB / 500 MB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_downloaded"
+        android:layout_marginLeft="200dp"/>
+
+    <TextView
+        android:id="@+id/display_uploaded"
+        android:text="Uploaded:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/downloaded"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"/>
+
+    <TextView
+        android:id="@+id/uploaded"
+        android:text= "150 MB / 500 MB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_uploaded"
+        android:layout_marginLeft="200dp"/>
+
+<GridLayout
+    android:id="@+id/gridlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/uploaded"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:alignmentMode="alignBounds"
+    android:useDefaultMargins="true"
+    android:rowCount="6"
+    android:columnCount="2">
+    <TextView
+        android:id="@+id/peers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peers:"/>
+    <TextView
+        android:id="@+id/display_active_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:text="active time:"/>
+    <TextView
+        android:id="@+id/peers_numbers"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="50"/>
+    <TextView
+        android:id="@+id/active_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="25 s"/>
+
+    <TextView
+        android:id="@+id/seeds"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="seeders:"
+        />
+    <TextView
+        android:id="@+id/display_seeds_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="seeding Time:"/>
+    <TextView
+        android:id="@+id/seeds_numbers"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="40"/>
+    <TextView
+        android:id="@+id/seeding_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="25 s"/>
+    <TextView
+        android:id="@+id/display_leaches"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Leaches:"/>
+    <TextView
+        android:id="@+id/display_pieces_downloaded"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="pieces_downloaded"/>
+    <TextView
+        android:id="@+id/leaches"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="3"/>
+    <TextView
+        android:id="@+id/pieces_downloaded"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="5 of 60"/>
+
+</GridLayout>
+
+</RelativeLayout>

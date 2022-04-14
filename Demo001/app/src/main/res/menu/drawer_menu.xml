@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/all_torrents"
+            android:title="All"
+            android:icon = "@drawable/all_torrents_icon">
+        </item>
+
+        <item
+            android:id="@+id/downloding_torrents"
+            android:title="downloding"
+            android:icon="@drawable/downloading_icon">
+        </item>
+
+        <item
+            android:id="@+id/completed_torrents"
+            android:title="Completed"
+            android:icon="@drawable/completed_icon">
+        </item>
+
+        <item
+            android:id="@+id/paused_torrents"
+            android:title="paused"
+            android:icon="@drawable/ic_pause_icon">
+        </item>
+    </group>
+
+    <item android:title="utility">
+
+        <menu>
+            <item
+                android:id="@+id/general_setting"
+                android:title="setting"
+                android:icon="@drawable/setting_icon">
+            </item>
+            <item
+                android:id="@+id/about"
+                android:title="about"
+                android:icon="@drawable/about_icon"
+                ></item>
+        </menu>
+    </item>
+</menu>

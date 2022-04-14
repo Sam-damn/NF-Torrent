@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#006080</color>
+    <color name="colorPrimaryDark">#006080</color>
+    <color name="colorAccent">#008060</color>
+    <color name="addtorrent_background">#808080</color>
+    <color name="primary_material_dark">#004d99</color>
+    <color name="progressbarbackground"> #000000 </color>
+    <color name="progress"> #000000 </color>
+</resources>
